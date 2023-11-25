@@ -1,0 +1,554 @@
+:root {
+    --text-color : #f0f4f5;
+    --background-color : #263343;
+    --accent-color :    #d49466;
+}
+
+body{
+    margin : 0;
+    font-family: 'Gowun Batang';
+    background-image: url("예시.jpg");
+}
+
+.main_home{
+    display: flex;           
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    height: 100vh;
+    border: 2px solid gray;
+    color: white;
+    background-color: var(--background-color);
+}
+
+.main_home:hover{
+    display: flex;           
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    height: 100vh;
+    border: 2px solid gray;
+    color: white;
+    background-color: var(--background-color);
+}
+
+a{
+    text-decoration: none;
+    color : var(--text-color);
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color : var(--background-color);
+    padding : 8px 12px;
+}
+
+.navbar_logo{
+    font-size : 30px;
+    color : var(--accent-color);
+}
+
+.navbar_menu{
+    display : flex;
+    list-style : none;
+    padding-left : 0;
+}
+
+.navbar_menu li{
+    padding : 8px 12px;
+}
+
+.navbar_icons{ 
+    list-style: none;
+    color : var(--text-color);
+    display : flex;
+    font-size: 11px;
+    text-align: center;
+    padding-left: 0;
+}
+
+.navbar_toggleBtn{
+    position : absolute;
+    right : 32px;
+    font-size : 24px;
+    color : var(--accent-color);
+    display : none
+}
+
+.navbar_icons li{
+    padding : 8px 12px;
+}
+
+.navbar_menu li:hover{
+    background-color : var(--accent-color);
+    border-radius: 4px;
+}
+
+@media screen and (max-width:768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu{
+        display : none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_icons{
+        display : none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar_toggleBtn{
+        display : block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active{
+        display : flex;
+    }
+
+}
+
+.article{
+    margin: 0 auto; /* 가로 중앙 정렬을 위해 */   
+    text-align: center;
+    padding : 8px 12px;
+    display: inline-block;
+    width : 100%;
+
+}
+
+.article .article_event{
+    margin: auto;
+    text-align: center;
+
+}
+
+.article .article_event span{
+    font-size: 1.6rem;
+    color :rgb(10, 6, 1);
+}
+
+
+.article .article_event img{
+    width:600px;
+    height: 800px;
+}
+
+.article .article_explain{
+    text-align: left;
+    width : 700px;
+    font-size: 1.1rem;
+    margin : auto;
+    display : block;
+}
+
+.article .article_explain_tip{
+    width:700px;
+    margin: auto;
+}
+
+.article_explain_tip img{
+    width : 200px;
+    height : 300px;
+    margin-bottom: 30px;
+}
+
+.article_explain_tip span{
+    color: var(--accent-color);
+    font-size: 1.3em;
+}
+
+.article .article_map{
+    margin : auto;
+    display : block;
+}
+
+.article span{
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.article_img{
+    float:left;
+    margin-right : 30px;
+    width : 700px;
+}
+
+
+body .side-bar ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;   	    /* 해당 태그의 list-style을 none으로 하는 것으로 ●을 제거한다 */
+  }
+  
+.side-bar a {
+    color: inherit;   	    /* 부모 엘리먼트의 값을 물려받는다 */
+    text-decoration: none;    /* 해당 태그의 text-decoration 속성을 none 값으로 하는 것으로 밑줄을 제거한다 */
+  }
+
+  /* 2차 이상의 메뉴를 숨기기 */
+.side-bar > ul ul {
+    display: none;
+  }
+  
+  /* 사이트의 높이를 5000px로 만들어 스크롤 생성 */
+.side-bar {
+    height: 100vh;
+    background-color: var(--accent-color);
+  }
+  
+  /* 사이드바의 너비와 높이를 변수를 통해 통제 */
+  :root {
+    --side-bar-width: 200px;
+    --side-bar-height: 100vh;
+  }
+  
+  .side-bar {
+    position: fixed;    /* 스크롤을 따라오도록 지정 */
+    background-color: var(--background-color);
+    width: var(--side-bar-width);
+    min-height: var(--side-bar-height);   /* 사이드바의 높이를 전체 화면 높이의 90%로 지정 */
+    margin-top: calc((100vh - var(--side-bar-height)) / 2);    /* 사이드바 위와 아래의 마진을 동일하게 지정 */
+  }
+  
+  /* 모든 메뉴의 a에 속성값 부여 */
+  .side-bar ul > li > a {
+    display: block;
+    color: white;
+    font-size: 1.4rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+  }
+
+  /* 자식의 position이 absolute일 때 자식을 영역 안에 가두어 준다 */
+.side-bar > ul > li {
+    position: relative;
+  }
+  
+  /* 모든 메뉴가 마우스 인식 시 반응 */
+  .side-bar ul > li:hover > a {
+    background-color:var(--accent-color);
+    border-bottom: 1px solid #999;
+  }
+  
+  /* 1차 메뉴의 항목이 마우스 인식 시에 2차 메뉴 등장 */
+  .side-bar > ul > li:hover > ul {
+    display: block;
+    position: absolute;
+    background-color: #888;
+    top: 0;         /* 2차 메뉴의 상단을 1차 메뉴의 상단에 고정 */
+    left: 100%;     /* 2차 메뉴를 1차 메뉴의 너비만큼 이동 */
+    width: 100%;    /* 1차 메뉴의 너비를 상속 */
+  }
+
+  /* 사이드바 너비의 80%만큼 왼쪽으로 이동 */
+.side-bar {
+    border-radius: 20px;
+    transform: translate(calc(var(--side-bar-width) * -0.8), 0);  /* X축 이동, Y축 고정 */
+    transition: .5s;
+  }
+  
+  /* 마우스 인식 시 원래의 위치로 이동 */
+  .side-bar:hover {
+    transform: translate(-20px, 0);   /* 둥근 모서리의 너비만큼 X축 이동, Y축 고정 */
+  }
+
+  .jb-division-line {
+    border-top: 1px solid #444444;
+    margin : 50px auto;
+    width: 500px;        
+  }
+
+  .footer_box {
+    height: 80px;        
+  }
+
+  /*slider*/
+        /* 기본 스타일 */
+        .slideshow-container {
+            max-width: 700px;
+            height : 500px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            width: 700px;
+            height: 500px;
+        }
+
+        /* 이전/다음 버튼 스타일 */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%); /* 중앙 정렬을 위해 추가 */
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            background: rgba(170, 166, 166, 0.5); /* 배경 추가 */
+            border-radius: 3px; /* 둥근 모양으로 변경 */
+        }
+
+        .prev {
+            left: 0;
+            transform: translate(-50%, -50%); /* 왼쪽 정렬을 위해 추가 */
+            border-radius: 3px 0 0 3px;
+        }
+
+        .next {
+            right: 0;
+            transform: translate(50%, -50%); /* 오른쪽 정렬을 위해 추가 */
+            border-radius: 0 3px 3px 0;
+        }
+
+        /* 이미지 슬라이드의 캡션 스타일 */
+        .text {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: var(--background-color);
+            color: #f2f2f2;
+            padding: 8px 0px;
+        }
+
+        .tg  {
+            border-collapse:collapse;
+            border-color:#93a1a1;
+            border-spacing:0;
+            margin: auto;
+            width : 700px;
+            font-family: 'Orbit', sans-serif;
+        }
+
+        .tg td{
+            background-color:#f1eee7;
+            border-color: rgb(238, 192, 7);
+            border-style:solid;
+            border-width:0.5px;
+            color:#002b36;
+            font-size:14px;
+            overflow:hidden;
+            padding:10px 5px;
+            word-break:normal;
+        }
+        
+        .tg th{background-color:#657b83;
+            border-color:#93a1a1;
+            border-style:solid;
+            border-width:0px;
+            color:#070707;
+          font-size:14px;
+          font-weight:normal;
+          overflow:hidden;
+          padding:10px 5px;
+          word-break:normal;
+        }
+        
+        .tg .tg-c3ow{
+            border-color:inherit;
+            text-align:center;
+            vertical-align:top;
+        }
+        .tg .tg-lcf4{
+            border-color:inherit;
+            text-align:center;
+            vertical-align:top
+        }
+
+        .tg .tg-0lax{
+            text-align: left;
+        }
+
+        .tg-head{
+            text-align: center;
+        }
+
+
+        /*button*/
+        /* 3D */
+
+          p {
+            margin-bottom: 0.3em;
+          }
+          
+          a.button {
+            width: 130px;
+            padding: 0;
+            margin: 10px 20px 10px 0;
+            font-weight: 600;
+            text-align: center;
+            line-height: 15px;
+            color: #0f0f0f;
+            border-radius: 5px;
+            transition: all 0.2s ;
+          }
+          
+          .btnOrange {
+            background: #FFAA40;
+          }
+          
+  .btnOrange.btnPush {
+    box-shadow: 0px 5px 0px 0px #A66615;
+  }
+
+  .btnPush:hover {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .btnOrange.btnPush:hover {
+    box-shadow: 0px 0px 0px 0px #A66615;
+  }
+
+  
+  /* BORDER */
+  .btnOrange.btnBorder {
+    box-shadow: 0px 0px 0px 0px #A66615;
+  }
+  
+  .btnOrange.btnBorder:hover {
+    box-shadow: 0px 0px 0px 5px #A66615;
+  }
+  
+  /* 이미지 팁 */
+  #container {
+    width: 1100px;
+    margin: 40px auto;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 35px;
+}
+
+.articles_phototip {
+    position: relative;
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.articles_phototip:hover {
+    transform: scale(1.05);
+}
+
+.articles_phototip img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer; /* 마우스 포인터를 손가락 모양으로 변경 */
+}
+
+.zoom-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+    display: none; /* 초기에는 확대 아이콘을 표시하지 않음 */
+}
+
+@media (max-width: 768px) {
+    .articles_phototip {
+        width: 100%;
+    }
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    background:#263343;
+    padding : 100px 0px;
+    border-top: 1px solid #F5F5F5;
+}
+
+footer .inner{
+    width: 1180px;
+    margin: 0px auto;
+}
+
+footer .inner .upper{
+    width: 100%;
+    border-bottom: 1px solid #F5F5F5;
+    padding-bottom: 40px;
+}
+
+footer .inner .upper ::after{
+    content: "";
+    display : block;
+    clear : both;
+}
+
+footer .inner .upper h1{
+    float:left;
+    font : bold 24px/1 "Gowun Batang";
+    color: #F5F5F5;
+}
+
+footer .inner .upper ul{
+    float : right;
+}
+
+footer .inner .upper ul li{
+    float:left;
+    margin-left: 20px;
+}
+
+footer .inner .upper ul li a{
+    font :  14px/1 "Gowun Batang";
+    color: #F5F5F5;
+}
+
+footer .inner .lower{
+    width : 100%;
+    padding-top: 20px;
+}
+
+footer .inner .lower address{
+    width : 100%;
+    font: 12px/1.3 "Gowun Batang";
+    color:#F5F5F5;
+    margin-bottom : 20px;
+}
+
+footer .inner .lower p{
+    width : 100%;
+    font: 12px/1 "Gowun Batang";
+    color : #F5F5F5;
+}

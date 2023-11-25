@@ -1,0 +1,147 @@
+/* test.css */
+
+:root {
+  --primary-color: #263343;
+  --accent-color: #d49466;
+  --text-color: #f0f4f5;
+}
+
+body {
+  font-family: 'Gowun Batang', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 16px;
+}
+
+.navbar_logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+.navbar_logo i {
+  margin-right: 8px;
+}
+
+.navbar_menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar_menu li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.navbar_icons {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.side-bar {
+  position: fixed;
+  background-color: var(--accent-color);
+  width: 200px;
+  min-height: 100vh;
+  margin-top: calc((100vh - var(--side-bar-height)) / 2);
+  border-radius: 20px;
+  transition: .5s;
+  color: var(--primary-color);
+}
+
+.side-bar ul > li > a {
+  display: block;
+  color: white;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+
+.side-bar ul ul {
+  display: none;
+  position: absolute;
+  background-color: #888;
+  top: 0;
+  left: 100%;
+  width: 100%;
+}
+
+.side-bar ul > li:hover > ul {
+  display: block;
+}
+
+.jb-division-line {
+  border-top: 1px solid #444444;
+  margin: 50px auto;
+  width: 80%;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-color: #93a1a1;
+  border-spacing: 0;
+  margin: auto;
+  width: 80%;
+  font-family: 'Orbit', sans-serif;
+}
+
+.tg td, .tg th {
+  background-color: #f1eee7;
+  border-color: rgb(238, 192, 7);
+  border-style: solid;
+  border-width: 0.5px;
+  color: #002b36;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg th {
+  background-color: #657b83;
+  border-color: #93a1a1;
+  border-style: solid;
+  border-width: 0px;
+  color: #070707;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg .tg-c3ow {
+  border-color: inherit;
+  text-align: center;
+  vertical-align: top;
+}
+
+.tg .tg-lcf4 {
+  border-color: inherit;
+  text-align: center;
+  vertical-align: top;
+}
+
+.tg .tg-0lax {
+  text-align: left;
+}
+
+.tg-head {
+  text-align: center;
+}
+
+/* Add your other styles as needed */

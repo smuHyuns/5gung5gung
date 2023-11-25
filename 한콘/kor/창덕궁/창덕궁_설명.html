@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel = "stylesheet" href = "../style.css">
+    <script src="https://kit.fontawesome.com/5a24a4fa8b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+    <script src = "../main.js" defer></script>
+</head>
+<body>
+  <nav class = "navbar">
+    <div class = "navbar_logo">
+        <i class="fa-solid fa-shapes"></i>
+        <a href="../index.html">오궁오궁</a>
+    </div>
+  
+    <ul class = "navbar_menu">
+      <li><a href="../경복궁/경복궁_설명.html">경복궁</a></li>
+      <li><a href="../경희궁/경희궁_설명.html">경희궁</a></li>
+      <li><a href="../덕수궁/덕수궁_설명.html">덕수궁</a></li>
+      <li><a href="../창경궁/창경궁_설명.html">창경궁</a></li>
+      <li><a href="../창덕궁/창덕궁_설명.html">창덕궁</a></li>
+    </ul>
+  
+    <ul class = "navbar_icons">
+        <li><a href ="#"><img src = "../img/korea_flag.png"  style = "width: 30px; height : 20px;"><br>KOR</a></li>
+        <li><a href ="../indexjpa.html"><img src = "../img/japan_flag.png" href ="#" style = "width: 30px; height : 20px;"><br>JPA</a></li>
+        <li><a href ="../indexviet.html"><img src = "../img/vietnam_flag.png" href ="#" style = "width: 30px; height : 20px;"><br>VIET</a></li>
+    </ul>
+  
+    <a href = "#" class = "navbar_toggleBtn">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+  </nav>
+
+<aside class="side-bar" style = "color : black;">
+    <section class="side-bar__icon-box">
+      <section class="side-bar__icon-1">
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+    </section>
+    <ul>
+      <li>
+        <a href="../경복궁/경복궁_설명.html"> 경복궁</a>
+        <ul>
+          <li><a href="../경복궁/경복궁_설명.html">설명</a></li>
+          <li><a href="../경복궁/경복궁_행사.html">행사</a></li>
+          <li><a href="../경복궁/경복궁_팁.html">팁</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../경희궁/경희궁_설명.html">경희궁</a>
+        <ul>
+          <li><a href="../경희궁/경희궁_설명.html">설명</a></li>
+          <li><a href="#" onclick="alert('경희궁에 현재 진행중인 행사가 없습니다.')">행사</a></li>
+          <li><a href="../경희궁/경희궁_팁.html">팁</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../덕수궁/덕수궁_설명.html">덕수궁</a>
+        <ul>
+          <li><a href="../덕수궁/덕수궁_설명.html">설명</a></li>
+          <li><a href="../덕수궁/덕수궁_행사.html">행사</a></li>
+          <li><a href="../덕수궁/덕수궁_팁.html">팁</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../창경궁/창경궁_설명.html">창경궁</a>
+        <ul>
+          <li><a href="../창경궁/창경궁_설명.html">설명</a></li>
+          <li><a href="../창경궁/창경궁_행사.html">행사</a></li>
+          <li><a href="../창경궁/창경궁_팁.html">팁</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../창덕궁/창덕궁_설명.html">창덕궁</a>
+        <ul>
+          <li><a href="../창덕궁/창덕궁_설명.html">설명</a></li>
+          <li><a href="../창덕궁/창덕궁_행사.html">행사</a></li>
+          <li><a href="../창덕궁/창덕궁_팁.html">팁</a></li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+        <div class = "article">
+          <h2 style = "text-align:center; margin : 30px;"> 창덕궁 </h2>
+
+          <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="explain/1.jpg" alt="Image 1">
+                <div class="text">창덕궁</div>
+            </div>
+        
+            <div class="mySlides">
+              <img src="explain/2.jpg" alt="Image 2">
+              <div class="text">창덕궁</div>
+            </div>
+        
+          <div class="mySlides">
+            <img src="explain/3.jpg" alt="Image 3">
+            <div class="text">창덕궁</div>
+          </div>
+        
+            <!-- 이전/다음 버튼 -->
+            <a class="prev" onclick="plusSlides(-1)">&#9665;</a>
+            <a class="next" onclick="plusSlides(1)">&#9655;</a>
+        </div>
+
+            <div class = "article_explain">
+                <br>  <span>경복궁의 이궁</span>으로 동쪽에 지어진 궁궐이며, 이웃한 창경궁과 서로 다른 별개의 용도로 사용되었다. 
+                자연지형을 크게 변형시키지 않고 인위적인 건물이 자연의 수림 속에 포근히 자리잡도록 한 배치이며, 한국 궁궐건축의 비정형적 조형미를 대표하고 있다.<br>
+            </div>
+
+            <br><a  target="_blank" href="https://www.cdg.go.kr/cms_for_cdg/show.jsp?show_no=38&check_no=8&c_relation=7&c_relation2=69" title="Button push orange" class="button btnPush btnOrange">창덕궁 방문하기</a>  
+
+            <div class="jb-division-line"></div>
+
+            <div class = "article_map">
+              <h2>찾아오는 길<br></h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.9654649911045!2d126.98627899678958!3d37.57943090000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca25bce7408e3%3A0xff296b97da565068!2z7LC9642V6raB!5e0!3m2!1sko!2skr!4v1700650760951!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <p style = "text-align: center;"></p>
+            </div>
+
+            <div class="jb-division-line"></div>
+
+            <div class = "article_explain">
+              <h3 style="text-align:center;"> 창덕궁 <운영시간></h2>
+
+              <table class="tg">
+                <thead>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td class="tg-head">11, 12, 1 월</td>
+                    <td class="tg-0lax">▪️ 09:00 ~ 17:30</td>
+                  </tr>
+
+                  <tr>
+                    <td class="tg-head">2, 3, 4, 5, 9, 10 월</td>
+                    <td class="tg-0lax">▪️ 09:00 ~ 18:00</td>
+                  </tr>
+
+                  <tr>
+                    <td class="tg-head">6, 7, 8 월</td>
+                    <td class="tg-0lax">▪️ 09:00 ~ 18:30</td>
+                  </tr>
+                 
+                  <tr>
+                    <td class="tg-0lax" style="text-align:center;" colspan="2">매주 월요일 휴궁</td>
+                  </tr>
+                </tbody>
+                </table>
+
+                <h3 style="text-align:center;"><입장료></h2>
+
+                  <table class="tg">
+                    <thead>
+                    </thead>
+                    <tbody>
+    
+                      <tr>
+                        <td class="tg-head">대인(만19세~만64세)</td>
+                        <td class="tg-0lax">▪️ 3000원(10인 이상 2400원)</td>
+                      </tr>
+    
+                      <tr>
+                        <td class="tg-head">소인(만18세 이하)</td>
+                        <td class="tg-0lax">▪️ 무료</td>
+                      </tr>
+    
+                      <tr>
+                        <td class="tg-head">무료</td>
+                        <td class="tg-0lax">▪️ 한복착용자<br>▪️ 매월 마지막 수요일<br>▪️ 65세이상</td>
+                      </tr>
+                      <tr>
+                    </tbody>
+                    </table>
+    
+            </div>
+
+
+
+        </div>
+
+
+
+        </div>
+
+
+        <div class = "article_explain">
+          <h3 style="text-align:center;"> 창덕궁 후원 <운영시간></h2>
+
+          <table class="tg">
+            <thead>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td class="tg-head">12, 1, 2 월</td>
+                <td class="tg-0lax">▪️ 10:00 ~ 16:10</td>
+              </tr>
+
+              <tr>
+                <td class="tg-head">3, 4, 5, 6, 9, 10월</td>
+                <td class="tg-0lax">▪️ 10:00 ~ 17:30</td>
+              </tr>
+
+              <tr>
+                <td class="tg-head">7, 8 월</td>
+                <td class="tg-0lax">▪️ 10:00 ~ 17:10</td>
+              </tr>
+              
+              <tr>
+                <td class="tg-head">11 월</td>
+                <td class="tg-0lax">▪️ 10:00 ~ 17:00</td>
+              </tr>
+
+              <tr>
+                <td class="tg-0lax" style="text-align:center;" colspan="2">매주 월요일 휴궁</td>
+              </tr>
+            </tbody>
+            </table>
+
+            <h3 style="text-align:center;"><입장료></h2>
+
+              <table class="tg">
+                <thead>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td class="tg-head">대인(만19세~만64세)</td>
+                    <td class="tg-0lax">▪️ 5,000원(+정각요금2,400원)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="tg-head">소인(만7세~만18세)</td>
+                    <td class="tg-0lax">▪️ 2,500원(+정각요금 무료)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="tg-head">경로(만65세 이상)</td>
+                    <td class="tg-0lax">▪️ 5,000원(+정각요금 무료)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="tg-0lax" style="text-align:center;" colspan="2">사전예약 필수</td>
+                  </tr>
+                  <tr>
+                </tbody>
+                </table>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="footer_box"></div>
+    <footer>
+      <div class="inner">
+          <div class="upper">
+              <h1>오궁오궁</h1>
+              <ul>
+                  <li><a href="#">연락</a></li>
+                  <li><a href="#">문의사항</a></li>
+                  <li><a href="#">제휴문의</a></li>
+              </ul>
+          </div>
+
+          <div class="lower">
+              <address>
+                  We always introduce korean palace for you. Please, call us <br>
+                  TEL : 031-2627-9614   C.P : 010-2627-9614
+              </address>
+
+              <p>
+                  오궁오궁; copyright all rights reserved.
+              </p>
+          </div>            
+      </div>
+  </footer>
+
+</body>
+</html>
