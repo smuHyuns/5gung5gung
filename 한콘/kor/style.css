@@ -37,6 +37,14 @@ a{
     color : var(--text-color);
 }
 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 .navbar{
     display: flex;
@@ -46,10 +54,50 @@ a{
     padding : 8px 12px;
 }
 
-.navbar_logo{
-    font-size : 30px;
-    color : var(--accent-color);
+.main_home .navbar_logo img{
+    height:100px;
 }
+
+.main_home .navbar_logo .logo-text{
+    font-size: 4rem;
+}
+
+.main_home .navbar_logo .slogan{
+    font-size: 1.5rem;
+}
+
+.navbar_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .logo-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    height: 50px;
+    margin-right: 10px; /* 조절 가능한 마진 값으로 이미지와 텍스트 간격 조절 */
+  }
+  
+  .logo-text {
+    font-size: 25px;
+    color: --text-color;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .slogan {
+    font-size: 11px;
+    color: var(--text-color); /* 적절한 색상 선택 */
+    margin-top: 5px; /* 원하는 간격으로 조절 */
+  }
+  
 
 .navbar_menu{
     display : flex;
@@ -336,15 +384,15 @@ body .side-bar ul, li {
             padding: 8px 0px;
         }
 
+        /* 표 작성 */
         .tg  {
             border-collapse:collapse;
             border-color:#93a1a1;
             border-spacing:0;
             margin: auto;
-            width : 700px;
-            font-family: 'Orbit', sans-serif;
+            width : 750px;
         }
-
+                /*
         .tg td{
             background-color:#f1eee7;
             border-color: rgb(238, 192, 7);
@@ -357,6 +405,7 @@ body .side-bar ul, li {
             word-break:normal;
         }
         
+
         .tg th{background-color:#657b83;
             border-color:#93a1a1;
             border-style:solid;
@@ -368,6 +417,7 @@ body .side-bar ul, li {
           padding:10px 5px;
           word-break:normal;
         }
+        */
         
         .tg .tg-c3ow{
             border-color:inherit;
@@ -386,9 +436,46 @@ body .side-bar ul, li {
 
         .tg-head{
             text-align: center;
+            font-weight: 600;
         }
 
+        */
+        table {
+            width: 700px; /* 테이블 너비 설정 */
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+            border-radius: 8px; /* 모서리 둥글게 */
+            overflow: hidden;
+          }
+          
+          th, td {
+            border: 1px solid #e0e0e0; /* 연한 회색 테두리 */
+            padding: 12px;
+            text-align: center;
+          }
+          
+          th {
+            background-color: #e0e0e0; /* 테이블 헤더 배경 색상 */
+            font-weight: 600;
+          }
+          
+          td {
+            text-align: left; /* 내용을 좌측 정렬로 변경 */
+          }
 
+          
+          tr:nth-child(odd) {
+            background-color: #F5F5F5; /* 짝수 행 배경 색상 */
+          }
+          
+          tr:nth-child(even) {
+            background-color: #F5F5F5; /* 짝수 행 배경 색상 */
+          }
+          
+          tr:hover {
+            background-color: #e0e0e0; /* 마우스 호버시 배경 색상 */
+          }
         /*button*/
         /* 3D */
 
