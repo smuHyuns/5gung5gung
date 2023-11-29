@@ -7,7 +7,8 @@
 body{
   padding-top : 95px;
     margin : 0;
-    font-family: 'Gowun Batang';
+    font-family: 'Gowun Batang', serif;
+    font-family: 'Noto Serif JP', serif;
     background-image: url("예시.jpg");
 }
 
@@ -268,7 +269,7 @@ body .side-bar ul, li {
   
   /* 사이드바의 너비와 높이를 변수를 통해 통제 */
   :root {
-    --side-bar-width: 19.5vh;
+    --side-bar-width: 23.2vh;
     --side-bar-height: 100vh;
   }
   
@@ -284,10 +285,10 @@ body .side-bar ul, li {
   .side-bar ul > li > a {
     display: block;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 50px;
+    padding-left: 23px;
   }
 
   /* 자식의 position이 absolute일 때 자식을 영역 안에 가두어 준다 */

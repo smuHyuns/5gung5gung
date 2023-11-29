@@ -7,7 +7,8 @@
 body{
   padding-top : 95px;
     margin : 0;
-    font-family: 'Gowun Batang';
+    font-family: 'Gowun Batang', serif;
+    font-family: 'Noto Serif JP', serif;
     background-image: url("예시.jpg");
 }
 
