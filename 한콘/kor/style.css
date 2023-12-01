@@ -243,6 +243,11 @@ a{
     width : 700px;
 }
 
+.articles_phototip span{
+  font-weight: 600;
+  color: #0f0f0f;
+}
+
 
 body .side-bar ul, li {
     margin: 0;
